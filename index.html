@@ -41,7 +41,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="image" style="width: 1000px" >
+                <div class="image" style="width: 1000px">
                     <img
                         src="images/Greetings-Section.png"
                         alt="First-section"
@@ -89,7 +89,7 @@
                     </ul>
                 </div>
                 <div class="image" id="mobile_image" style="width: 900px">
-                    <img src="images/Journey-Coding.png"  alt="Journey-Coding" />
+                    <img src="images/Journey-Coding.png" alt="Journey-Coding" />
                 </div>
             </section>
 
@@ -172,7 +172,7 @@
             </section>
 
             <section class="wrapper style1 align-center" id="four">
-                <div class="inner" >
+                <div class="inner">
                     <h2>Human Skills</h2>
                     <p>
                         Beyond code, I bring a positive and helpful demeanor to
@@ -427,7 +427,7 @@
                     <div
                         id="video-container"
                         style="
-                            display: flex;
+                            display: none;
                             align-items: center;
                             justify-content: center;
                             align-items: center;
@@ -438,7 +438,149 @@
                             height="375px"
                         ></video>
                     </div>
+
                     <div
+                        id="video_button"
+                        style="
+                            padding-left: 200px;
+                            padding-right: 200px;
+                            display: flex;
+                            align-items: center;
+                            box-shadow: 1px 1px 1px 1px lightgray;
+                        "
+                    >
+                        <li>
+                            <span
+                                onclick="handleVideo('video-container', 'video_button')"
+                                class="button"
+                                style="
+                                    border: 1px solid #47d3e5;
+                                    color: #47d3e5 !important;
+                                "
+                                >Show Video</span
+                            >
+                        </li>
+                    </div>
+
+                    <div
+                        id="video-container2"
+                        style="
+                            display: none;
+                            align-items: center;
+                            justify-content: center;
+                            align-items: center;
+                        "
+                    >
+                        <video
+                            src="videos/Landing-Page-Mobile.mp4"
+                            height="375px"
+                        ></video>
+                    </div>
+
+                    <div
+                        id="video_button2"
+                        style="
+                            padding-left: 200px;
+                            padding-right: 200px;
+                            display: flex;
+                            align-items: center;
+                            box-shadow: 1px 1px 1px 1px lightgray;
+                        "
+                    >
+                        <li>
+                            <span
+                                onclick="handleVideo('video-container2', 'video_button2')"
+                                class="button"
+                                style="
+                                    border: 1px solid #47d3e5;
+                                    color: #47d3e5 !important;
+                                "
+                                >Show Video</span
+                            >
+                        </li>
+                    </div>
+
+
+                    <div
+                    id="video-container3"
+                    style="
+                        display: none;
+                        align-items: center;
+                        justify-content: center;
+                        align-items: center;
+                    "
+                >
+                    <video
+                        src="videos/Landing-Page-Desktop-2.mp4"
+                        height="375px"
+                    ></video>
+                </div>
+
+                <div
+                    id="video_button3"
+                    style="
+                        padding-left: 200px;
+                        padding-right: 200px;
+                        display: flex;
+                        align-items: center;
+                        box-shadow: 1px 1px 1px 1px lightgray;
+                    "
+                >
+                    <li>
+                        <span
+                            onclick="handleVideo('video-container3', 'video_button3')"
+                            class="button"
+                            style="
+                                border: 1px solid #47d3e5;
+                                color: #47d3e5 !important;
+                            "
+                            >Show Video</span
+                        >
+                    </li>
+                </div>
+
+
+                <div
+                id="video-container4"
+                style="
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    align-items: center;
+                "
+            >
+                <video
+                    src="videos/Landing-Page-Mobile2.mp4"
+                    height="375px"
+                ></video>
+            </div>
+
+            <div
+                id="video_button4"
+                style="
+                    padding-left: 200px;
+                    padding-right: 200px;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: 1px 1px 1px 1px lightgray;
+                "
+            >
+                <li>
+                    <span
+                        onclick="handleVideo('video-container4', 'video_button4')"
+                        class="button"
+                        style="
+                            border: 1px solid #47d3e5;
+                            color: #47d3e5 !important;
+                        "
+                        >Show Video</span
+                    >
+                </li>
+            </div>
+
+                    
+
+                    <!-- <div
                         id="video-container2"
                         style="
                             display: flex;
@@ -479,7 +621,7 @@
                             src="videos/Landing-Page-Mobile2.mp4"
                             height="375px"
                         ></video>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -581,6 +723,6 @@
         <script src="assets/js/main.js"></script>
         <script src="assets/js/video.js"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="assets/js/sendEmail.js" ></script>
+        <script src="assets/js/sendEmail.js"></script>
     </body>
 </html>

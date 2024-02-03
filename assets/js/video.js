@@ -1,24 +1,37 @@
 
-function handleVideoHover(containerId) {
+// function handleVideoHover(containerId) {
+//     const videoContainer = document.getElementById(containerId);
+//     const video = videoContainer.querySelector("video");
+
+//     videoContainer.addEventListener("mouseenter", () => {
+//         video.play();
+//         video.controls = true;
+//     });
+
+//     videoContainer.addEventListener("mouseleave", () => {
+//         video.pause();
+//         video.controls = false;
+//         video.currentTime = 0;
+//     });
+// }
+
+// handleVideoHover('video-container')
+// handleVideoHover('video-container2')
+// handleVideoHover('video-container3')
+// handleVideoHover('video-container4')
+
+function handleVideo(containerId, buttonId) {
     const videoContainer = document.getElementById(containerId);
+    const buttonContainer = document.getElementById(buttonId);
     const video = videoContainer.querySelector("video");
 
-    videoContainer.addEventListener("mouseenter", () => {
-        video.play();
-        video.controls = true;
-    });
+    buttonContainer.style.display = 'none';
+    videoContainer.style.display = 'flex';
 
-    videoContainer.addEventListener("mouseleave", () => {
-        video.pause();
-        video.controls = false;
-        video.currentTime = 0;
-    });
+    video.play();
+    video.controls = true;
 }
 
-handleVideoHover('video-container')
-handleVideoHover('video-container2')
-handleVideoHover('video-container3')
-handleVideoHover('video-container4')
 
 const scrollToTop = (() => window.scrollTo({top: 0, behavior: "smooth"}));
 
