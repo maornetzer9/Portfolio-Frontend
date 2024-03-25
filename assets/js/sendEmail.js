@@ -21,7 +21,6 @@ class EmailService {
 
             const response = await fetch('https://backend-portfolio-qtge.onrender.com/email/sendEmail', { method, headers, body });
             const response_json = await response.json();
-            console.log(response)
 
             const { code } = response_json;
 
