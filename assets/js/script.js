@@ -34,25 +34,3 @@ const sendEmail = () => {
       message => alert(message)
     );
 }
-
-
-// function handleVideoHover(containerId) {
-//     const videoContainer = document.getElementById(containerId);
-//     const video = videoContainer.querySelector("video");
-
-//     videoContainer.addEventListener("mouseenter", () => {
-//         video.play();
-//         video.controls = true;
-//     });
-
-//     videoContainer.addEventListener("mouseleave", () => {
-//         video.pause();
-//         video.controls = false;
-//         video.currentTime = 0;
-//     });
-// }
-
-// handleVideoHover('video-container')
-// handleVideoHover('video-container2')
-// handleVideoHover('video-container3')
-// handleVideoHover('video-container4')
