@@ -19,7 +19,7 @@ class EmailService {
 
             const body = JSON.stringify({ name, email, message });
 
-            const response = await fetch('/https://backend-portfolio-jwh6.onrender.com/email/sendEmail', { method, headers, body });
+            const response = await fetch('https://backend-portfolio-jwh6.onrender.com/email/sendEmail', { method, headers, body });
             const response_json = await response.json();
             console.log(response)
 
